@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffbbada0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"    
+        	android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:gravity="center" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/maxscore"
+	            android:textSize="25sp"
+	            android:textColor="#ffff0000" />
+	
+	        <TextView
+	            android:id="@+id/tv_maxscore"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:background="#aaffffff" />
+    	</LinearLayout>
+    	
+        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"    
+        	android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:gravity="center" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/maxnum"
+	            android:textSize="25sp"
+	            android:textColor="#ffff0000" />
+	
+	        <TextView
+	            android:id="@+id/tv_maxnum"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:background="#aaffffff" />
+    	</LinearLayout>
+ 
+        
+        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:gravity="center" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/score"
+	            android:textSize="25sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_score"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:background="#aaffffff" />
+	    </LinearLayout>
+ 
+    </LinearLayout>
+    <com.ax.game2048.GameView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp">
+        
+    </com.ax.game2048.GameView>
+
+</LinearLayout>
